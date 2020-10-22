@@ -121,6 +121,7 @@ void CNameAndAddressView::OnSetupName()
 	CEntryDlg Dlg;
 	if (Dlg.DoModal() == IDOK)
 	{
+		//Get the Values form the Dialog
 		CNameAndAddressDoc* pDoc = GetDocument();
 		pDoc->m_strName = Dlg.m_strName;
 		pDoc->m_strAddress = Dlg.m_strAddress;
